@@ -46,4 +46,10 @@ Route::get('test', function () {
 
 });
 
+
+
+Route::group(['namespace' => 'Subscriptions'], function() {
+    Route::get('plans', 'SubscriptionController@index')->name('plans');
+});
+
 require __DIR__.'/auth.php';
