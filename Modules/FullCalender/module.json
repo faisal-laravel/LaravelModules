@@ -1,0 +1,13 @@
+{
+    "name": "FullCalender",
+    "alias": "fullcalender",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FullCalender\\Providers\\FullCalenderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
