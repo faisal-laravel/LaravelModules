@@ -13,4 +13,5 @@
 
 Route::prefix('superadmin')->group(function() {
     Route::get('/', 'SuperAdminController@index');
+    Route::view('superadmin:roles-permissions.roles-list');
 });

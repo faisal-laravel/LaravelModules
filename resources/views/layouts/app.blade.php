@@ -32,8 +32,10 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
-
         <!-- pusher script -->
+        <!-- subscription key -->
+        <script src="https://js.stripe.com/v3/"></script>
+        
 
 
     </head>

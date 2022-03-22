@@ -49,7 +49,10 @@ Route::get('test', function () {
 
 
 Route::group(['namespace' => 'Subscriptions'], function() {
-    Route::get('plans', 'SubscriptionController@index')->name('plans');
+    Route::get('plans', 'StripeSubscriptionController@index')->name('plans');
+     Route::get('/payments', 'PaymentController@index')->name('payments');
+    Route::post('/payments', 'PaymentController@store')->name('payments.store');
+    Route::get('/cancel', 'PaymentController@cancelSubscription')->name('subscription.cancel');
 });
 
 require __DIR__.'/auth.php';
